@@ -1,0 +1,77 @@
+/* General page styling */
+body {
+    background-color: #1e1e2e;
+    color: #f8f9fa;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+/* Title Styling */
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffcc00;
+    text-shadow: 2px 2px 8px rgba(255, 204, 0, 0.6);
+    margin-bottom: 20px;
+}
+
+/* Radio button container */
+.label {
+    font-size: 18px;
+    font-weight: bold;
+    color: #f1f1f1;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Customizing RadioItems */
+.radio-items {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"] + label {
+    padding: 8px 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    background-color: #282c3f;
+    color: #ffffff;
+}
+
+input[type="radio"]:checked + label {
+    background-color: #ffcc00;
+    color: #1e1e2e;
+    font-weight: bold;
+}
+
+/* Graph container */
+.chart {
+    border-radius: 12px;
+    background: linear-gradient(to right, #2c3e50, #4c5d70);
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.1);
+    transition: 0.3s ease-in-out;
+}
+
+.chart:hover {
+    box-shadow: 0px 6px 18px rgba(255, 255, 255, 0.2);
+}
+
+/* Main container */
+.container {
+    width: 80%;
+    margin: 40px auto;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+}

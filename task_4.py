@@ -8,7 +8,7 @@ df= pd.read_csv("processed.csv")
 df = df.sort_values(by="date")
 
 
-app= Dash(__name__)
+app = Dash(__name__, external_stylesheets=["style.css"])
 app.layout=html.Div([
     html.H1("Pink Morsel Sales DashBoard",className="title"),
     html.Label("select Region :", className="label"),
